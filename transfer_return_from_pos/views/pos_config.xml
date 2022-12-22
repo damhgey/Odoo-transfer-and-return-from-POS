@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_pos_config_form_inherit" model="ir.ui.view">
+            <field name="name">pos.config.form.inherit</field>
+            <field name="model">pos.config</field>
+            <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//div[@id='inventory_location']" position="inside">
+
+                    <div class="col-12 col-lg-6 o_setting_box" title="Operation Types To Choose from for Create Transfer.">
+                        <div class="o_setting_right_pane">
+                            <label for="operation_type_ids" string="Operation Types"/>
+                            <div class="text-muted">
+                                Operation Types To Choose from for Create Transfer Or Return.
+                            </div>
+                            <div class="content-group mt16">
+                                <field name="operation_type_ids" widget="many2many_tags"/>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="CreateTransferButton" owl="1">
+        <span class="control-button">
+            <i class="fa fa-box"></i>
+            <span></span>
+            <span>Create Transfer</span>
+        </span>
+    </t>
+
+    <t t-name="CreateReturnButton" owl="1">
+        <span class="control-button">
+            <i class="fa fa-undo"></i>
+            <span></span>
+            <span>Create Return</span>
+        </span>
+    </t>
+
+</templates>
+
